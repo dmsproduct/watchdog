@@ -45,13 +45,13 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/templates/main/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="52" column="91" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
+            <state relative-caret-position="272">
+              <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
               <folding>
-                <element signature="e#1106#1112#0" expanded="true" />
-                <element signature="e#1239#1245#0" expanded="true" />
-                <element signature="e#1479#1485#0" expanded="true" />
-                <element signature="e#1690#1696#0" expanded="true" />
+                <element signature="e#1123#1129#0" expanded="true" />
+                <element signature="e#1256#1262#0" expanded="true" />
+                <element signature="e#1496#1502#0" expanded="true" />
+                <element signature="e#1707#1713#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -477,13 +477,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="52" column="91" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
+        <state relative-caret-position="272">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <element signature="e#1106#1112#0" expanded="true" />
-            <element signature="e#1239#1245#0" expanded="true" />
-            <element signature="e#1479#1485#0" expanded="true" />
-            <element signature="e#1690#1696#0" expanded="true" />
+            <element signature="e#1123#1129#0" expanded="true" />
+            <element signature="e#1256#1262#0" expanded="true" />
+            <element signature="e#1496#1502#0" expanded="true" />
+            <element signature="e#1707#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>

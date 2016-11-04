@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Competitor(models.Model):
     Competitor_Logo = models.FileField()

@@ -1,5 +1,27 @@
 {% extends 'main/base.html' %}
 
 {% block body %}
-    <h1>You've made it to the details page!</h1>
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
+            <div class="col-lg-4">
+                <strong>Social Media:</strong><br>
+                <a class="btn btn-social-icon btn-twitter" href="{{ competitor.Twitter }}">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a class="btn btn-social-icon btn-facebook" href="{{ competitor.Facebook }}">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a class="btn btn-social-icon btn-linkedin" href="{{ competitor.LinkedIn }}">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <strong>Marketing Info:</strong>
+                <p><a href="{{ competitor.Crunchbase }}" target="_blank">Learn About Funding via Crunchbase</a></p>
+                <p><a href="{{ competitor.Similarweb }}" target="_blank">Learn About This Company's Marketing Strategy.</a></p>
+            </div>
+        </div>
+    </div>
+
+    </div>
 {% endblock %}

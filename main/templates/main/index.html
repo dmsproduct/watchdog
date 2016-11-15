@@ -3,16 +3,29 @@
 {% block body %}
 <div class="container-fluid">
     {% for competitor in competitors %}
-        <img src="{{ competitor.Competitor_Logo.url }}" alt="{{ competitor.Competitor_Name }}" class="img-responsive"/>
-        <h2><strong>{{ competitor.Competitor_Name }}</strong></h2>
-        <h4>Category: {{ competitor.Category }}</h4>
-        <p>Notes:</p>
-        <p>{{ competitor.Notes }}</p>
-        <p><a href="{{ competitor.Twitter }}" target="_blank">Check out {{ competitor.Competitor_Name }} on Twitter!</a></p>
-        <p><a href="{{ competitor.Facebook }}" target="_blank">Check out {{ competitor.FaceBook}} on FaceBook!</a></p>
-        <p><a href="{{ competitor.LinkedIn }}" target="_blank">Check out {{ competitor.Competitor_Name }} on LinkedIn!</a></p>
-        <p><a href="{{ competitor.Crunchbase }}" target="_blank">Learn more about {{ competitor.Competitor_Name  }}.</a></p>
-        <p><a href="{{ competitor.Similarweb }}" target="_blank">Learn more about {{ competitor.Competitor_Name  }}'s online marketing strategy!</a></p>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                    <img src="{{ competitor.Competitor_Logo.url }}" alt="{{ competitor.Competitor_Name }}" class="img-responsive" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title"><strong>{{ competitor.Competitor_Name }}</strong></span>
+                  <p>Category: {{ competitor.Category }}</p>
+                  <br/>
+                  <p>{{ competitor.Notes|truncatewords:10|safe}}</p>
+                </div>
+                <div class="card-action">
+                  <a href="{% url 'competitor_detail' pk=competitor.pk %}">Learn More...</a>
+                </div>
+              </div>
+            </div>
+            <p><a href="{{ competitor.Twitter }}" target="_blank">Check out {{ competitor.Competitor_Name }} on Twitter!</a></p>
+            <p><a href="{{ competitor.Facebook }}" target="_blank">Check out {{ competitor.FaceBook}} on FaceBook!</a></p>
+            <p><a href="{{ competitor.LinkedIn }}" target="_blank">Check out {{ competitor.Competitor_Name }} on LinkedIn!</a></p>
+            <p><a href="{{ competitor.Crunchbase }}" target="_blank">Learn more about {{ competitor.Competitor_Name  }}.</a></p>
+            <p><a href="{{ competitor.Similarweb }}" target="_blank">Learn more about {{ competitor.Competitor_Name  }}'s online marketing strategy!</a></p>
+        </div>
     {% endfor %}
 </div>
 

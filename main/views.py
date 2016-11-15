@@ -10,10 +10,5 @@ def index(request):
 
 
 def competitor_detail(request, pk):
-    competitors = Competitor.objects.all()
-    details = get_object_or_404(Competitor, pk=pk)
-    context = {
-        'competitors': competitors,
-        'details': details,
-    }
-    return render(request, 'main/details.html', context)
+    competitor = get_object_or_404(Competitor, pk=pk)
+    return render(request, 'main/details.html', {'competitor': competitor})

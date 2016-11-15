@@ -7,7 +7,7 @@
             <div class="col s12 m7">
               <div class="card">
                 <div class="card-image">
-                    <img src="{{ competitor.Competitor_Logo.url }}" alt="{{ competitor.Competitor_Name }}" class="img-responsive" />
+                    <a href="{% url 'competitor_detail' pk=competitor.pk %}"><img src="{{ competitor.Competitor_Logo.url }}" alt="{{ competitor.Competitor_Name }}" class="img-responsive" /></a>
                 </div>
                 <div class="card-content">
                   <span class="card-title"><strong>{{ competitor.Competitor_Name }}</strong></span>

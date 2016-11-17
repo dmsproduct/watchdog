@@ -2,24 +2,36 @@
 
 {% block body %}
     <div class="container">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
-            <div class="col-lg-4">
-                <strong>Social Media:</strong><br>
-                <a class="btn btn-social-icon btn-twitter" href="{{ competitor.Twitter }}">
-                    <span class="fa fa-twitter"></span>
-                </a>
-                <a class="btn btn-social-icon btn-facebook" href="{{ competitor.Facebook }}">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a class="btn btn-social-icon btn-linkedin" href="{{ competitor.LinkedIn }}">
-                    <span class="fa fa-linkedin"></span>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <strong>Marketing Info:</strong>
-                <p><a href="{{ competitor.Crunchbase }}" target="_blank">Funding Info From Crunchbase</a></p>
-                <p><a href="{{ competitor.Similarweb }}" target="_blank">Website Marketing Strategy From SimilarWeb</a></p>
-            </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        </div>
+        <div class="row">
+            <img src="{{ competitor.Competitor_Logo.url }}" alt="{{ competitor.Competitor_Name }}" class="img-responsive" />
+            <br>
+            <h3>{{ competitor.Competitor_Name }}</h3>
+            <p>Category: {{ competitor.Category }}</p>
+        </div>
+        <div class="row">
+            <h5>NOTES:</h5>
+            <p>{{ competitor.Notes }}</p>
+        </div>
+        <div class="row">
+            <strong>Follow:</strong><br>
+            <a class="btn btn-social-icon btn-twitter" href="{{ competitor.Twitter }}">
+                <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-facebook" href="{{ competitor.Facebook }}">
+                <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-linkedin" href="{{ competitor.LinkedIn }}">
+                <span class="fa fa-linkedin"></span>
+            </a>
+        <br>
+        </div>
+        <div class="row">
+            <strong>Marketing Info:</strong><br>
+            <a href="{{ competitor.Crunchbase }}" target="_blank">Funding Info From Crunchbase</a><br>
+            <a href="{{ competitor.Similarweb }}" target="_blank">Website Marketing Strategy From SimilarWeb</a>
         </div>
     </div>
 {% endblock %}
